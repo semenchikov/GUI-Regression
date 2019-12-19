@@ -6,13 +6,41 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1252</width>
+    <width>1253</width>
     <height>663</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <widget class="QTabWidget" name="tabs">
+   <property name="geometry">
+    <rect>
+     <x>-4</x>
+     <y>49</y>
+     <width>1261</width>
+     <height>621</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="model">
+    <attribute name="title">
+     <string>Model and Data</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="solve0">
+    <attribute name="title">
+     <string>Simulated Annealing Modification</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="solve1">
+    <attribute name="title">
+     <string>Covariance Matrix Adaptation</string>
+    </attribute>
+   </widget>
+  </widget>
  </widget>
  <resources/>
  <connections/>

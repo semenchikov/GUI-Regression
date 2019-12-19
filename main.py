@@ -33,6 +33,8 @@ class MainWindow(QMainWindow):
     super(MainWindow, self).__init__(*args, **kwargs)
 
     self.setWindowTitle("My Awesome App")
+    self.dialog = MainDialog(parent=self)
+    self.dialog.show()
 
 
 if __name__ == '__main__':
