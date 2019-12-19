@@ -16,8 +16,8 @@
   <widget class="QTabWidget" name="tabs">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
+     <x>-10</x>
+     <y>10</y>
      <width>1261</width>
      <height>581</height>
     </rect>
@@ -90,10 +90,10 @@ p, li { white-space: pre-wrap; }
     <widget class="QLabel" name="modelHelp">
      <property name="geometry">
       <rect>
-       <x>310</x>
-       <y>10</y>
-       <width>591</width>
-       <height>281</height>
+       <x>350</x>
+       <y>0</y>
+       <width>451</width>
+       <height>301</height>
       </rect>
      </property>
      <property name="text">
@@ -104,7 +104,8 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:14pt; font-weight:600;&quot;&gt;How to use:&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;Equation is defines term by term. &lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;To add term to the equation fill all fields to the right and press button &amp;quot;ADD TERM&amp;quot;!&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;To add term to the equation &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;fill all fields to the right and press button &amp;quot;ADD TERM&amp;quot;!&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;Warning! All fields must be specified!&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;To remove last term just press &amp;quot;REMOVE LAST&amp;quot;&lt;/span&gt;&lt;/p&gt;
@@ -237,7 +238,7 @@ p, li { white-space: pre-wrap; }
       <bool>false</bool>
      </property>
     </widget>
-    <widget class="Line" name="line">
+    <widget class="Line" name="horizontalLine">
      <property name="geometry">
       <rect>
        <x>-40</x>
@@ -266,6 +267,110 @@ p, li { white-space: pre-wrap; }
       <bool>false</bool>
      </property>
     </widget>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>409</y>
+       <width>791</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="equationVBoxLayout"/>
+    </widget>
+    <widget class="QLabel" name="equationLabel">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>340</y>
+       <width>791</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:600;&quot;&gt;Final equation view&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="verticalLine">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>-10</y>
+       <width>20</width>
+       <height>631</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="dataLabel">
+     <property name="geometry">
+      <rect>
+       <x>890</x>
+       <y>340</y>
+       <width>321</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Load data file &lt;/span&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;(.csv, .xls, .xlsx)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPlainTextEdit" name="choosenFilePlainText">
+     <property name="geometry">
+      <rect>
+       <x>860</x>
+       <y>400</y>
+       <width>371</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="plainText">
+      <string>Choosen file...</string>
+     </property>
+     <property name="overwriteMode">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="removeTermButton_2">
+     <property name="geometry">
+      <rect>
+       <x>990</x>
+       <y>460</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Choose file</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
    </widget>
    <widget class="QWidget" name="solve0">
     <attribute name="title">
@@ -281,9 +386,9 @@ p, li { white-space: pre-wrap; }
   <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">
     <rect>
-     <x>800</x>
+     <x>910</x>
      <y>600</y>
-     <width>391</width>
+     <width>331</width>
      <height>51</height>
     </rect>
    </property>
