@@ -16,10 +16,10 @@
   <widget class="QTabWidget" name="tabs">
    <property name="geometry">
     <rect>
-     <x>-4</x>
-     <y>49</y>
+     <x>0</x>
+     <y>0</y>
      <width>1261</width>
-     <height>621</height>
+     <height>581</height>
     </rect>
    </property>
    <property name="currentIndex">
@@ -29,6 +29,243 @@
     <attribute name="title">
      <string>Model and Data</string>
     </attribute>
+    <widget class="QLabel" name="modelLabel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>321</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="text">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:14pt; font-weight:600;&quot;&gt;Model:&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt;&quot;&gt;SUM&lt;/span&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; vertical-align:sub;&quot;&gt;i&lt;/span&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt;&quot;&gt;( a&lt;/span&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; vertical-align:sub;&quot;&gt;i&lt;/span&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt;&quot;&gt; * x^(b&lt;/span&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; vertical-align:sub;&quot;&gt;i&lt;/span&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt;&quot;&gt;) )&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:14pt; font-weight:600;&quot;&gt;Conditions:&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt;&quot;&gt;lower&lt;/span&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; vertical-align:sub;&quot;&gt;i&lt;/span&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt;&quot;&gt; &amp;lt;= b&lt;/span&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; vertical-align:sub;&quot;&gt;i&lt;/span&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt;&quot;&gt; &amp;lt;= higher&lt;/span&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; vertical-align:sub;&quot;&gt;i&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="bSpinBox">
+     <property name="geometry">
+      <rect>
+       <x>930</x>
+       <y>100</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="suffix">
+      <string/>
+     </property>
+     <property name="prefix">
+      <string>b = </string>
+     </property>
+     <property name="minimum">
+      <number>-99999999</number>
+     </property>
+     <property name="maximum">
+      <number>99999998</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="modelHelp">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>10</y>
+       <width>591</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:14pt; font-weight:600;&quot;&gt;How to use:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;Equation is defines term by term. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;To add term to the equation fill all fields to the right and press button &amp;quot;ADD TERM&amp;quot;!&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;Warning! All fields must be specified!&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;To remove last term just press &amp;quot;REMOVE LAST&amp;quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;To clear equation press &amp;quot;RESET&amp;quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;Fields:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;	N - number of terms to add&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;	b - integer number&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;	left_bound - left bound of b&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;	right_bound - roght bound of b&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="NSpinBox">
+     <property name="geometry">
+      <rect>
+       <x>930</x>
+       <y>50</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="suffix">
+      <string/>
+     </property>
+     <property name="prefix">
+      <string>N = </string>
+     </property>
+     <property name="minimum">
+      <number>-99999999</number>
+     </property>
+     <property name="maximum">
+      <number>99999999</number>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="bLeftBoundSpinBox">
+     <property name="geometry">
+      <rect>
+       <x>930</x>
+       <y>150</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="suffix">
+      <string/>
+     </property>
+     <property name="prefix">
+      <string>left_bound = </string>
+     </property>
+     <property name="minimum">
+      <number>-99999999</number>
+     </property>
+     <property name="maximum">
+      <number>99999998</number>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="bRightBoundSpinBox">
+     <property name="geometry">
+      <rect>
+       <x>930</x>
+       <y>200</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="suffix">
+      <string/>
+     </property>
+     <property name="prefix">
+      <string>right_bound = </string>
+     </property>
+     <property name="minimum">
+      <number>-99999999</number>
+     </property>
+     <property name="maximum">
+      <number>99999998</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="termLabel">
+     <property name="geometry">
+      <rect>
+       <x>930</x>
+       <y>0</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Term to add:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="addTermButton">
+     <property name="geometry">
+      <rect>
+       <x>930</x>
+       <y>250</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ADD TERM</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>-40</x>
+       <y>300</y>
+       <width>1351</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="removeTermButton">
+     <property name="geometry">
+      <rect>
+       <x>1070</x>
+       <y>250</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>REMOVE LAST</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
    </widget>
    <widget class="QWidget" name="solve0">
     <attribute name="title">
@@ -40,6 +277,27 @@
      <string>Covariance Matrix Adaptation</string>
     </attribute>
    </widget>
+  </widget>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>600</y>
+     <width>391</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>22</pointsize>
+    </font>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Apply|QDialogButtonBox::Close|QDialogButtonBox::Reset</set>
+   </property>
+   <property name="centerButtons">
+    <bool>true</bool>
+   </property>
   </widget>
  </widget>
  <resources/>
