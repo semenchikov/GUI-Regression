@@ -3,12 +3,12 @@
 Система написана на языке Python(все файлы с исходным кодом расположены выше, на этой странице).
 Для того, чтобы использовать, требуется:
   1. Установить Qt Creator и следующие python-пакеты:
-      *numpy
-      *matplotlib
-      *cma
-      *pyqt5
-      *sobol_seq
-      *ghalton
+      * numpy
+      * matplotlib
+      * cma
+      * pyqt5
+      * sobol_seq
+      * ghalton
   2. Склонировать данный репозиторий (git clone ...)
   3. Запустить main.py
   
